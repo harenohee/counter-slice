@@ -10,7 +10,6 @@ const App = () => {
   const globalNumber = useSelector((state) => state.counterSlice.number);
   const dispatch = useDispatch();
 
-  // 이벤트핸들러를 통해 input과 state를 연결
   const handleInput = (event) => {
     const { value } = event.target;
     // 문자열->숫자 형변환 '+'
