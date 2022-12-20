@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addNumber, minusNumber } from "./redux/modules/counterSlice";
+import { __addNumber, minusNumber } from "./redux/modules/counterSlice";
 
 const App = () => {
   const [number, setNumber] = useState(0);
@@ -21,7 +21,7 @@ const App = () => {
   //더하기 버튼 이벤트핸들러
   // action creator를 dispatch해주고 인자로 number를 넣어준다.
   const onClickAddNumberHandler = () => {
-    dispatch(addNumber(number));
+    dispatch(__addNumber(number));
   };
   // 빼기 버튼 이벤트핸들러
   const onClickMinusNumberHandler = () => {
